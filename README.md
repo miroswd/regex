@@ -78,7 +78,7 @@ wendel, erick
 
 ### Trasformar markdown em html
 
-```mk
+```md
 O [Miro Sites](https://miro.com), situado em algumas redes com outros links [Twitter](https://twitter.com), [Instagram](http://instagram.com)
 
 Ah e pode pesquisar no [Google](https://google.com) ou 
@@ -113,7 +113,17 @@ no grupo um, teremos somente o texto: alt
 // selecionando todo o contexto de link
 /\[(.*?)\]\(([http|https].*?)\)/
 
+/*
+O <a href="https://miro.com">Miro Sites</a>, situado em algumas redes com outros links <a href="https://twitter.com">Twitter</a>, <a href="http://instagram.com">Instagram</a>
+
+Ah e pode pesquisar no <a href="https://google.com">Google</a> ou 
+<a href="https://yahoo.com">Yahoo</a>
+
+Só bora!
+*/
+
 ```
+
 
 ### Rodando no terminal
 
