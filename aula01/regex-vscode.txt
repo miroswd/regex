@@ -1,0 +1,45 @@
+/^\d{3}\d{3}''\d{3}-\d{2}$/ -> seleciona o padrão de cpf
+
+123.123.123-12
+472.332.778-93
+751.266.232-73
+
+// replace [.-] = vazio -> ctrl + f e alt + r
+
+
+// Imagina que temos um CSV e queremos transformar em JSON
+
+Santos, Altamir
+Wendel, Erick
+Testes, miro
+
+// depois de dar o replace:
+
+{ "firstname": "Altamir", "lastname": "Santos"}
+{ "firstname": "Erick", "lastname": "Wendel"}
+{ "firstname": "miro", "lastname": "Testes"}
+
+
+/*
+
+\[(.*?)\]\(([http|https].*?)\)
+
+replace: <a href="$2">$1</a>
+
+*/
+// markdown to html
+
+O [Miro Sites](https://miro.com), situado em algumas redes com outros links [Twitter](https://twitter.com), [Instagram](http://instagram.com)
+
+Ah e pode pesquisar no [Google](https://google.com) ou 
+[Yahoo](https://yahoo.com)
+
+Só bora!
+
+// to html 
+O <a href="https://miro.com">Miro Sites</a>, situado em algumas redes com outros links <a href="https://twitter.com">Twitter</a>, <a href="http://instagram.com">Instagram</a>
+
+Ah e pode pesquisar no <a href="https://google.com">Google</a> ou 
+<a href="https://yahoo.com">Yahoo</a>
+
+Só bora!
